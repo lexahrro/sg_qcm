@@ -6,14 +6,30 @@ body {
     background-size: 100% 100%; /* version standardisée */
 }
 
+.categorie{
+    color: #fff;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.62);
+    width: 40%;
+    padding: 10px 0px;
+    border: 1px solid #323232;
+    text-align: center;
+}
+
+
+.row-chrono{
+    margin-top: 20px;
+}
 
 .chrono{
-    background: #d70012;
-    border: ridge red 10px;
+    background: #91000e;
+    border: ridge #870400 10px;
     border-radius:50%;
     width:80px;
     height:80px;
 }
+
+
 
 .container-question {
     padding-right: 50px;
@@ -30,20 +46,15 @@ body {
     color: #ffffff;
     font-size: 20px;
     background: rgba(0, 0, 0, 0.62);
-    padding: 6px 150px;
-    border: groove #b30000 15px;
+    border: groove #870400 15px;
     text-decoration: none;
 }
 
-.container-nq{
-    background: #5a0000;
-    border: ridge #b30000 10px;
-    width:80px;
-    height:80px;
+.question{
+    font-size: 28px;
 }
 
-
-
+/* ------------- Bouton questions ------------ */
 
 .btn-reponse {
     -webkit-border-radius: 15;
@@ -53,7 +64,7 @@ body {
     color: #ffffff;
     font-size: 20px;
     background: rgba(0, 0, 0, 0.62);
-    padding: 20px 150px;
+    padding: 20px 0px;
     border: groove #870400 15px;
     text-decoration: none;
     margin-top: 50px;
@@ -61,9 +72,11 @@ body {
 }
 
 .btn-reponse:hover {
-    background: #810000;
+    background: #5a0000;
     text-decoration: none;
 }
+
+/* ------------- Bouton valider ------------ */
 
 .btn-valider{
     -webkit-border-radius: 15;
@@ -73,43 +86,37 @@ body {
     color: #ffffff;
     font-size: 20px;
     background: #5a0000;
-    padding: 6px 150px;
-    border: groove #b30000 15px;
+    padding: 6px 0px;
+    border: groove #870400 15px;
     text-decoration: none;
     margin-top: 30px;
-    float: right;
+    width: 100%;
 }
 
-.progress{
-    margin-top: 50px;
-}
 
-.prog-bar{
-    background-color: #d70012;
-}
 
 .col-valider{
     padding: 0;
 }
 
-.row-chrono{
-    margin-top: 20px;
-}
 
-.categorie{
-    color: #fff;
-    font-size: 28px;
-    background-color: rgba(0, 0, 0, 0.62);
-    width: 400px;
-    padding: 10px 70px;
-    border: 1px solid #fff;
-    text-align: center;
+/* ------------ Numéro question --------------- */
+
+.container-nq{
+    background: #5a0000;
+    border: ridge #870400 10px;
+    width:70px;
+    height:70px;
 }
 
 .n-question{
     margin-top: 15px;
     color: #fff;
+    font-size: 20px;
 }
+
+
+/* ---------------- Progress bar ----------------- */
 
 .progress {
     height: 40px;
@@ -119,7 +126,8 @@ body {
     border-radius: 4px;
     -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
     box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
-    border: 1px solid #fff;
+    border: 1px solid #323232;
+    margin-top: 50px;
 }
 
 .progress-bar {
@@ -141,3 +149,49 @@ body {
 .pourcentage{
     margin-left: 40%;
 }
+
+.prog-bar{
+    background-color: #870400;
+}
+
+
+@media(max-width:767px){
+    .container-nq{
+        width: 60px;
+        height: 60px;
+    }
+
+    .n-question{
+        font-size: 18px;
+    }
+
+    .categorie{
+        width: 100%;
+    }
+
+    .btn-reponse{
+        width: 100%;
+    }
+
+    .chrono{
+        margin-top: 10px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .question{
+        font-size: 20px;
+    }
+}
+@media(min-width:768px){
+
+    .btn-reponse{
+        width: 100%;
+    }
+}
+@media(min-width:992px){
+    .btn-reponse{
+        width: 80%;
+    }
+}
+@media(min-width:1200px){}
